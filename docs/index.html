@@ -10,12 +10,10 @@
 			font-family: sans-serif;
 			top: 0px;
 		}
-
 		h1 {
 			font-size: 250%;
 			text-align: center;
 			color: blue;
-
 		}
 		h1:hover:not(span) {
 			color: black;
@@ -31,24 +29,20 @@
 			line-height: 200%;
 			background-color: #f1f1f1;
 		}
-/*		.verticalLine {
-			left: 0px;
-			position: absolute;
-			height: 1857px;
-			width: 200px;
-			border-right: solid 2px lightblue;
-			background-color: #f1f1f1;
-			margin-left: 0px;
-		}
-*/
-		ol {
+		.box {
 			background: #f8f9fa;
-			list-style-position: inside;
-			text-align: center;
 			padding: 7px;
 			width: 250px;
 			border: 1px solid #a2a9b1;
 			list-style: none;
+		}
+		a:link,a:visited {
+			text-decoration: none;
+			color: #0645AD;
+		}
+		li > a:hover,li > a:active, a.link:hover,a.link:active {
+			text-decoration: underline;
+			color: #0645AD;
 		}
 		p,ol,h2 {
 			margin-left: 50px;
@@ -72,18 +66,17 @@
 	<div style = "position: absolute;border-left: solid 2px lightblue;margin:0px 0px 0px 200px;background-color:white;">
 	<h1> <span> Matisse</span>'s Aston<span>is</span>hing <span>an</span>d <span>Idiot</span>ic Obsessions </h1>
 	<nav role = "banner">
-		<div class = "verticalLine"> <div>
 		<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1920px-Wikipedia-logo-v2.svg.png" alt = "Logo" width = 185px height = 169.2px style = "position:fixed;left:4px;top:20px;"> </img>
 		<img src="https://fontmeme.com/permalink/220729/f33091ce8c28c4f3502a900126d62b58.png" alt="Font" width = 183px height = 30px style = "position:fixed;top:200px;left:7.5px;"> </img>
 		<img src="https://fontmeme.com/permalink/220729/684b13e99a2cdb1114bfe2c25a274b97.png" alt = "Subtitle" width = 182px height = 12.5px style = "position:fixed;top:240px;left:7.5px;"> </img>
 		<div style = "position:fixed; top:95%;left:10px;font-size:95%"> &copy;Viktor Mishkin, 2022</div>
 	</nav>
-	<ol>
-		Contents:
-		<li> <a href = "#paragraph1"> 1 Gambling </a> </li>
-		<li> <a href = "#paragraph2"> 2 NFT Horse Racing </a> </li>
-		<li> <a href = "#paragraph3"> 3 Magic the Gathering </a> </li>
-		<li> <a href = "#paragraph4"> 4 Mountain Biking </a> </li>
+	<ol class = "box">
+		<div style = "text-align:center;">Contents: </div>
+		<li> 1&nbsp; <a href = "#paragraph1"> Gambling </a> </li>
+		<li> 2&nbsp; <a href = "#paragraph2"> NFT Horse Racing </a> </li>
+		<li> 3&nbsp; <a href = "#paragraph3"> Magic the Gathering </a> </li>
+		<li> 4&nbsp; <a href = "#paragraph4"> Mountain Biking </a> </li>
 	</ol>
 	<a id = paragraph1>
 	<h2> Gambling </h2>
@@ -114,14 +107,16 @@
 	<p>
 		Fill in later!
 	</p>
-		<ol style = "width: 400px">
-			More information about Matisse:
+		<h2>More information about Matisse:</h2>
+		<hr>
+		<ol style = "padding-left:25px;">
 			<li> <a href = https://www.strava.com/athletes/61155243 target = "_blank"> Matisse's Strava </a> </li>
 			<li> <a href = https://zed.run/stable/brengrif-stable target = "_blank"> Matisse's ZED Run Profile </a> </li>
 			<li> <a href = https://www.youtube.com/watch?v=dQw4w9WgXcQ target = "_blank"> Matisse's Bank & Social Security Details </a> </li>
 			<li> <a href = https://www.youtube.com/watch?v=dQw4w9WgXcQ target = "_blank"> Matisse's OnlyFans </a> </li>
 		</ol>
-		<div style = "margin-left:50px;"><a href = "#"> Back to top </a></div>
+		<br>
+		<div style = "text-align: center;"> <a class = "link" href = "#"> Back to top </a></div>
 	</div>
 </body>
 </html>
